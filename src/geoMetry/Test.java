@@ -3,7 +3,14 @@ package geoMetry;
 public class Test {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Circle c1 = new Circle (10,15, , ,23);
+		System.out.println(c1);
+		System.out.println(c1.calculateCircumference());
+		
+		
+		/*Funktioniert nicht, ich verstehe das Konzept nicht ganz und weiﬂ deswegen nicht
+		wie was zu deffinieren ist. */
 
 	}
 

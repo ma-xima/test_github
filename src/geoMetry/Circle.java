@@ -39,6 +39,11 @@ public class Circle extends Shapes {
 		return this.getRadius()*2*3.14;
 	}
 	
+	/*public String toString() {
+		return "The middlepoint is at the point: " + this.calculateCircumference() ;
+	}
+	*/
+	
 	//calculates area
 	public double calculateArea() {
 		return this.getRadius()*this.getRadius()*3.14;
