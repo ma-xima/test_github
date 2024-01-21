@@ -2,15 +2,14 @@ package geoMetry;
 
 public class Circle extends Shapes {
 	
-	private String middlepoint;
+	private double middlepoint;
 	private double radius;
 	
-	public Circle(double x, double y,double length, double width) {
+	public Circle(double x, double y, double middlepoint, double radius) {
 		this.middlepoint = middlepoint;
+		this.radius = radius;
 		this.setX(x);
 		this.setY(y);
-		this.setLength(length);
-		this.setWidth(width);
 		
 	}
 //function to get middle point
@@ -19,8 +18,12 @@ public class Circle extends Shapes {
 		return this.getX()+ this.getY();
 	}
 
-	public void setMiddlepoint(String middlepoint) {
+	public void setMiddlepoint(double middlepoint) {
 		this.middlepoint = middlepoint;
+	}
+	
+	public String toString () {
+		return "The middlepoint is at the point: " + this.middlepoint ;
 	}
 	
 	public double getRadius() {
