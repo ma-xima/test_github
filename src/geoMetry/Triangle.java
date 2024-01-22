@@ -2,9 +2,9 @@ package geoMetry;
 
 public class Triangle extends Shapes{
 	
-	private double cornerA;
+	Coordinates cornerA;
 	private double hight;
-	public Triangle(double x, double y,double length, double cornerA) {
+	public Triangle(double x, double y,double length, Coordinates cornerA) {
 		this.cornerA = cornerA;
 		this.hight = hight;
 		this.setX(x);

@@ -2,10 +2,10 @@ package geoMetry;
 
 public class Circle extends Shapes {
 	
-	private double middlepoint;
+	Coordinates middlepoint;
 	private double radius;
 	
-	public Circle(double x, double y, double middlepoint, double radius) {
+	public Circle(double x, double y, Coordinates middlepoint, double radius) {
 		this.middlepoint = middlepoint;
 		this.radius = radius;
 		this.setX(x);
@@ -18,7 +18,7 @@ public class Circle extends Shapes {
 		return this.getX()+ this.getY();
 	}
 
-	public void setMiddlepoint(double middlepoint) {
+	public void setMiddlepoint(Coordinates middlepoint) {
 		this.middlepoint = middlepoint;
 	}
 	
