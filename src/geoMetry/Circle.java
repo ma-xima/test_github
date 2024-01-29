@@ -23,7 +23,8 @@ public class Circle extends Shapes {
 	}
 	
 	public String toString () {
-		return "The middlepoint is at the point: " + this.middlepoint ;
+		return "Corner A is at the point: " + this.getCoordinates().getX() + "|" +
+				this.getCoordinates().getY()+ "\n\t" + "Radius: " + this.getRadius();
 	}
 	
 	public double getRadius() {

@@ -2,27 +2,17 @@ package geoMetry;
 
 public class Rectangle  extends Shapes{
 	
-	Coordinates cornerA;
-	private double radius;
-	public Rectangle(double x, double y,double length, double width, Coordinates cornerA, double radius) {
-		this.cornerA = cornerA;
-		this.setX(x);
-		this.setY(y);
+	public Rectangle(double x, double y,double length, double width) {
+		super(x,y);
 		this.setLength(length);
 		this.setWidth(width);	
 	}
 	
-
-	public double getCornerA() {
-		return this.getX()+ this.getY();
-	}
-
-	public void setCornerA(Coordinates cornerA) {
-		this.cornerA = cornerA;
-	}
 	
 	public String toString () {
-		return "Corner A is at the point: " + this.cornerA ;
+		return "Corner A is at the point: " + this.getCoordinates().getX() + "|" +
+				this.getCoordinates().getY()+ "\n\t" + "Length: " + this.getLength()+ 
+				"\n\t" + "Width: "+this.getWidth();
 	}
 	
 	//calculates circumference

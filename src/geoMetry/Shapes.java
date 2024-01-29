@@ -1,23 +1,25 @@
 package geoMetry;
 
 public abstract class Shapes {
-	private double x;
-	private double y;
+	private Coordinates coordinates;
 	private double length;
 	private double width;
 	
-	public double getX() {
-		return x;
+	public Shapes(double x, double y) {
+		this.coordinates = new Coordinates(x,y);
 	}
-	public void setX(double x) {
-		this.x = x;
+	
+	
+	public Coordinates getCoordinates() {
+		return coordinates;
 	}
-	public double getY() {
-		return y;
+
+
+	public void setCoordinates(Coordinates coordinates) {
+		this.coordinates = coordinates;
 	}
-	public void setY(double y) {
-		this.y = y;
-	}
+
+
 	public double getLength() {
 		return length;
 	}
@@ -32,7 +34,7 @@ public abstract class Shapes {
 	}
 	
 	public String toString() {
-		return "length:"+this.length + "width:"+this.width +"\n\t"+ "x="+this.x + "y="+this.y;
+		return "length:"+this.length + "width:"+this.width +"\n\t"+ "x="+ this.coordinates;
 	}
 	
 	
