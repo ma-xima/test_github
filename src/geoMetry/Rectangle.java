@@ -12,7 +12,7 @@ public class Rectangle  extends Shapes{
 	public String toString () {
 		return "Corner A is at the point: " + this.getCoordinates().getX() + "|" +
 				this.getCoordinates().getY()+ "\n\t" + "Length: " + this.getLength()+ 
-				"\n\t" + "Width: "+this.getWidth();
+				"\n\t" + "Width: "+ this.getWidth();
 	}
 	
 	//calculates circumference
