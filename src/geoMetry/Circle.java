@@ -6,16 +6,15 @@ public class Circle extends Shapes {
 	private double radius;
 	
 	public Circle(double x, double y, Coordinates middlepoint, double radius) {
+		super(x,y);
 		this.middlepoint = middlepoint;
 		this.radius = radius;
-		this.setX(x);
-		this.setY(y);
+		
 		
 	}
-//function to get middle point
-	//????????????????????????
+	//function to get middle point
 	public double getMiddlepoint() {
-		return this.getX()+ this.getY();
+		return middlepoint.getX() + middlepoint.getY();
 	}
 
 	public void setMiddlepoint(Coordinates middlepoint) {
@@ -35,21 +34,23 @@ public class Circle extends Shapes {
 		this.radius = radius;
 	}
 	
+	
 	//calculates circumference
 	public double calculateCircumference() {
 		return this.getRadius()*2*3.14;
 	}
 	
-	/*public String toString() {
-		return "The middlepoint is at the point: " + this.calculateCircumference() ;
-	}
-	*/
 	
 	//calculates area
 	public double calculateArea() {
 		return this.getRadius()*this.getRadius()*3.14;
 	}
 	
+	
+	/*public String toString() {
+	return "The middlepoint is at the point: " + this.calculateCircumference() ;
+}
+*/
 	
 	
 	
