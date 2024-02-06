@@ -6,7 +6,6 @@ public class Comment {
 	private String text;
 	
 	public Comment(User author, String text) {
-		super();
 		this.author = author;
 		this.text = text;
 	}

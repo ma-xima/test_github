@@ -31,12 +31,12 @@ public class Photo extends Post {
 
 	public String toString() {
 		String tmp = "Photo(s): ";
-		for(Photo p : photos) {
-			User author = p.getAuthor();
-			String headline = p.getHeadline();
-			String picture = p.getPictureFileName();
-			LocalDate timestamp = p.getTimestamp();
-			int likes = p.getLikes();
+		for(Photo ph : photos) {
+			User author = ph.getAuthor();
+			String headline = ph.getHeadline();
+			String picture = ph.getPictureFileName();
+			LocalDate timestamp = ph.getTimestamp();
+			int likes = ph.getLikes();
 			tmp = tmp + "\n\tVerfasst von: " + author +
 					"\n\t" + headline +
 					"\n\t" + picture +
