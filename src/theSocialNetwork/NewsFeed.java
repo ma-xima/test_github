@@ -46,5 +46,6 @@ public class NewsFeed {
 		for(Post p : posts) {
 			System.out.println(p.toString());
 		}
+		
 	}
 }
