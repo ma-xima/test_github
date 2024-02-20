@@ -11,7 +11,6 @@ public class NewsFeed {
 	}
 	
 	public NewsFeed(ArrayList<Post> posts) {
-		super();
 		this.posts= posts;
 	}
 	
