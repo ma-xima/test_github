@@ -1,16 +1,38 @@
 package Arrays;
 
 public class Umsatzsteigerung {
-	 int[]dailyGains = new int[31];
+	 private static int day;
+	 private static  int nextDay;
+	 private static double percentJump;
+	 private static int percentJumpCount;
+	 private static int[] dailyGains = new int[31];
 	 
 	 int count5PercentJumps(int[]gains) {
-		 for(int i = 0; i < dailyGains.length; i++) {
-			 if(dailyGains[i] + dailyGains[i++] >= dailyGains[i]+ dailyGains[i]*0.5) {
-				 System.out.println("für den Tag gibt es einen Bonus");
+		 for(int i = 0; i <= dailyGains.length; i++) {
+			 day = dailyGains[i];
+			 if(i >= dailyGains.length) {
+				 System.err.println("Letzter Tag");
+			 }else {
+				 nextDay = dailyGains[i+1];
 			 }
-			 
+			 percentJump = nextDay * 0.05;
+			 if((nextDay - day) >= percentJump) {
+				 percentJumpCount ++;
+			 }
 		 }
+		 return percentJumpCount;
+	 }
+	 
+	 public static void main(String[]args) {
+		 dailyGains[0] = 1000;
+		 dailyGains[1] = 2000;
+		 dailyGains[2] = 500;
+		 dailyGains[3] = 9000;
+		 dailyGains[4] = 9010;
 		 
+		 int count = count5PercentJumps(dailyGains);
+		 
+		 System.out.println(count);
 	 }
 
 }
