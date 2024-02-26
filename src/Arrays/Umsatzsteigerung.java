@@ -7,7 +7,7 @@ public class Umsatzsteigerung {
 	 private static int percentJumpCount;
 	 private static int[] dailyGains = new int[31];
 	 
-	 int count5PercentJumps(int[]gains) {
+	 public static int count5PercentJumps(int[]gains) {
 		 for(int i = 0; i <= dailyGains.length; i++) {
 			 day = dailyGains[i];
 			 if(i >= dailyGains.length) {
