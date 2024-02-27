@@ -10,6 +10,7 @@ public class BildVergroessern {
     int height = array.length;
     int[][] result = new int[ height * factor ][ width * factor ];
 
+    //Erste Zeile erstellen, Adresse für den Speicher steht im Array, füllen, rechnen 
     for ( int row = 0; row < result.length; row++ ) {
       int[] cols = result[ row ];
       for ( int col = 0; col < cols.length; col++ )
