@@ -1,5 +1,7 @@
 package LinkedList;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -12,6 +14,8 @@ public class LinkedListTester {
 		list.add(1);
 		list.add(2);
 		list.add(3);
+		
+		Collections.rotate(list, 2);
 		
 		//"Laufvariable" zum Iterieren einer Datenstruktur
 		//läuft immer vom Anfang bis zum Ende
