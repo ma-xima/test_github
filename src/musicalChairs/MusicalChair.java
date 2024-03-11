@@ -10,8 +10,8 @@ public class MusicalChair {
 
 	private List<String> names;
 	
-	public MusicalChair(String... names) { //(Vektorübergabe bei Java immer Array)?
-		//String... kann beliebig viele Strings übernehmen
+	public MusicalChair(String... names) { //(Vektorï¿½bergabe bei Java immer Array)?
+		//String... kann beliebig viele Strings ï¿½bernehmen
 		//Java regelt das intern mit einem Array
 		//dadurch wird length und nicht size verwendet!
 		if(names.length > 0) {
@@ -46,5 +46,15 @@ public class MusicalChair {
 		this.rotate(distance);
 		((LinkedList<String>) this.names).removeLast();
 	}
+	public void play(int distance) {
+        if(this.names.size() <= 0) {
+            System.err.println("Die Liste beinhaltet keine EintrÃ¤ge!");
+        }else {
+            while(this.names.size() >= 1) {
+                this.rotateAndRemove(distance);
+            }
+        }
+
+    }
 
 }
