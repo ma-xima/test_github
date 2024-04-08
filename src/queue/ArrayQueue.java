@@ -14,6 +14,7 @@ public class ArrayQueue {
 		queue = new int[size];
 	}
 	//Hinzufügen
+	//puts an item into the queue
 	public static void queueEnqueue(int item) {
 		if(rear == capacity) {
 			System.out.println("Queue ist voll.");
@@ -23,6 +24,7 @@ public class ArrayQueue {
 		}
 	}
 	//Entfernen
+	//Removes an item with a certain ID from the queue
 	public static int queueDequeue() {
 		int firstElement = 0; //wäre es in else deklariert würde es nur dort existieren,return geht so nicht
 		if(rear == front) {
@@ -41,6 +43,7 @@ public class ArrayQueue {
 		return firstElement;
 	}
 	//Ausgabe
+	//Prints every item in the queue
 	public static void queueDisplay() {
 		if(front == rear) {
 			System.out.println("Queue is empty!");
@@ -51,6 +54,7 @@ public class ArrayQueue {
 		}
 	}
 	
+	//Returns the first element in the queue
 	public static int queueFront() {
 		//TODO erstes Element ohne Löschen zurückgeben
 		int firstElement = 0; 
