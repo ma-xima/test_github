@@ -14,9 +14,12 @@ public class ReverseWords {
     }
 
     // Den umgekehrten String zusammensetzen
-    StringBuilder reversed = new StringBuilder();
+    StringBuilder reversed = new StringBuilder(); //StringBuilder = Klasse in Java
     	while (!stack.isEmpty()) {
-    		reversed.append(stack.pop());
+    		reversed.append(stack.pop());//append() = eine Methode der Klasse StringBuilder 
+    	/*wird verwendet, um Zeichen oder Zeichenfolgen an das Ende 
+    	  des aktuellen Inhalts des StringBuilder-Objekts anzufügen*/
+    	 
     	}
 
     	return reversed.toString();
