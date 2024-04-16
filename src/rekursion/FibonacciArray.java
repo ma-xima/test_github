@@ -17,7 +17,6 @@ public class FibonacciArray {
 	}
 	public static void main(String[] args) {
 		System.out.println(fibonacciArray(1000));
-		
 
 	}
 

@@ -19,7 +19,6 @@ public class FibonacciIterative {
 
 	public static void main(String[] args) {
 		System.out.println(fibonacciIterative(1000));
-	
 
 	}
 
