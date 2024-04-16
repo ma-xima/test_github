@@ -53,6 +53,6 @@ public class UpnCalculator {
             return 0; 
         }
         
-        return stack.pop();
+        return stack.peek();
     }
 }
