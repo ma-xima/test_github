@@ -11,8 +11,9 @@ public class BinomialCoefficient {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(bC(4,2));
+		System.out.println(bC(4,2)); 
 
 	}
 
 }
+ 

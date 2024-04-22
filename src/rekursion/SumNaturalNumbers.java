@@ -6,7 +6,7 @@ public class SumNaturalNumbers {
 		if (n == 0) {
 			return 1;
 		} else {
-			return n + recursiveSum(n-1);
+			return n + recursiveSum(n-1); //n+1 -> Endbedingung nicht erfüllt -> stack overflow
 		}
 		}
 
