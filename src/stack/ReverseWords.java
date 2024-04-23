@@ -2,6 +2,7 @@ package stack;
 
 import java.util.Stack;
 
+//Selbst versucht - StringReversal(richtige Datei)
 public class ReverseWords {  
 	public static String reverseString(String input) {
 		if (input == null)
