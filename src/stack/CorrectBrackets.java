@@ -1,6 +1,6 @@
 package stack;
 import java.util.Stack;
-
+//Selbst versucht- BracketTester (Richtige Datei)
 public class CorrectBrackets {
 	public static boolean checkBrackets(String expression) {
         Stack<Character> stack = new Stack<>();
