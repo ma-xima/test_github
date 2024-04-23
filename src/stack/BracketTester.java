@@ -29,6 +29,7 @@ public class BracketTester {
 
 	public static void main(String[] args) {
 		String c = "({})";
+		System.out.println("Ausdrucck: " + checkBrackets(c));
 		// TODO Auto-generated method stub
 
 	}
