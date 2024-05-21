@@ -33,7 +33,10 @@ public class ElectronicDevice {
 		}
 	}
 	
-	public ElectronicDevice() {}
+	public ElectronicDevice(String name, int watt) {
+		this.setName(name); //Setter weil er blablabla bereits erfüllt
+		this.setWatt(watt);
+	}
 	
 
 
