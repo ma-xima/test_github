@@ -1,27 +1,17 @@
 package exceptions;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.time.LocalDateTime;
 
 public class PrintWriterExample {
-    public static void main(String[] args) {
-        // Passe den Dateipfad entsprechend an
-        String dateipfad = "text.txt";
-
-        try (BufferedReader reader = new BufferedReader(new FileReader(dateipfad))) {
-            String zeile;
-            StringBuilder musiknoten = new StringBuilder();
-
-            while ((zeile = reader.readLine()) != null) {
-                // Extrahiere Musiknoten (C, D, E, F, G, A, B, c, d, e, f, g, a, b, c', d', e', f', g', a', b')
-                String noten = zeile.replaceAll("[^CDEFGABcdefgab']", "");
-                musiknoten.append(noten);
-            }
-
-            System.out.println("Extrahierte Musiknoten: " + musiknoten.toString());
-        } catch (IOException e) {
-            System.err.println("Fehler beim Lesen der Datei: " + e.getMessage());
+    public static void main(String[] args) throws FileNotFoundException {
+        try {
+            PrintWriter printWriter = new PrintWriter("test.txt");
+            printWriter.println(LocalDateTime.now().toString());
+            printWriter.close();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
