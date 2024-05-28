@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ReadMusicNotes {
@@ -25,10 +26,11 @@ public class ReadMusicNotes {
             while (scanner.hasNextLine()) {
                 String zeile = scanner.nextLine();
                 System.out.println(zeile);
-                if(noten.matcher(zeile).matches()) {
-                    bw.write(zeile + " ");
+                Matcher matcher = noten.matcher(zeile);
+                while (matcher.find()) {
+                    bw.write(matcher.group() + " ");
                 }
-           }
+            }
 
             scanner.close();
             bw.close();
@@ -38,3 +40,4 @@ public class ReadMusicNotes {
         }
     }
 }
+
